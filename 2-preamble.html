@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #F5F5DC;
+            color: #000000;
+            word-wrap: break-word;
+        }
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        hr {
+            border: 1px solid #000000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hover-image {
+            position: absolute;
+            display: none;
+            border: 1px solid #000000;
+            background-color: #FFFFFF;
+        }
+    </style>
+    <script>
+        function showImage(event, imgSrc) {
+            const hoverImage = document.getElementById('hoverImage');
+            hoverImage.src = imgSrc;
+            hoverImage.style.top = event.pageY + 10 + 'px';
+            hoverImage.style.left = event.pageX + 10 + 'px';
+            hoverImage.style.display = 'block';
+        }
+        
+        function hideImage() {
+            const hoverImage = document.getElementById('hoverImage');
+            hoverImage.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>2.0 Actual Preamble</h1>
+    <hr>
+    
+    <h2></h2>
+    <p>I eat pho every day. It is not cooked every day. Rather, meal prep occurs at the beginning of each week in a massive, massive pot (20+ litres) and is whittled through the week across the family. This pot is frozen in the intersession between meals. In winter, it is handy to freeze the pot on the deck or the porch due to Edmonton’s cold and dry winter.</p>
+    
+    <p>Due to my incredible and fortunate circumstances, be aware that proportions and apparatuses used in this recipe are for hardcore weeklong broth pots. This recipe, at the posted proportions, is not meant to be consumed in a single night by one or few individuals. Matthew, you're an engineer (EDIT 2024: this was written when you were still an engineer), you can do basic math to proportion the recipe to your needs. </p>
+
+    <p>Perhaps you can invite me over to your house and we can make it for all your friends. Wow, what an exciting time that would be.</p>
+    
+    <p>Warning: my grammar deteriorates from this point. But at least I don’t put two spaces between two sentences like our friend Matthew does. (EDIT 2024: upon visual inspection matthew no longer does this)</p>
+    
+    <h2>1.1 Recipe Background</h2>
+
+    <p>For some reason, I brought pho to school once. Matthew really liked it (EDIT 2024: I don’t remember this). Despite me saying that there are no good Pho places in Edmonton, he still goes to random shitty restaurants to get his pho fix. It's like an addiction to crack (bad crack)</p>
+
+    <p>To help my poor friend, I promised to give him the family recipe. Then he got mad. He got mad because I promised the recipe but never gave it to him. So, to keep him happy, I promised I'd hand over the recipe by the day we graduate. Well, here I am, totally forgetting about our deal and making this crappy basic HTML 1.0 website to justify the tardiness</p>
+
+    <img src="img/preamble/001.png" width="400">
+
+    <p></p>
+
+    <a href="3-teasers.html">continue to recipe...</a>
+
+</body>
+</html>

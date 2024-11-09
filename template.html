@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #F5F5DC;
+            color: #000000;
+            word-wrap: break-word;
+        }
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        hr {
+            border: 1px solid #000000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hover-image {
+            position: absolute;
+            display: none;
+            border: 1px solid #000000;
+            background-color: #FFFFFF;
+        }
+    </style>
+    <script>
+        function showImage(event, imgSrc) {
+            const hoverImage = document.getElementById('hoverImage');
+            hoverImage.src = imgSrc;
+            hoverImage.style.top = event.pageY + 10 + 'px';
+            hoverImage.style.left = event.pageX + 10 + 'px';
+            hoverImage.style.display = 'block';
+        }
+        
+        function hideImage() {
+            const hoverImage = document.getElementById('hoverImage');
+            hoverImage.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to My 90s Webpage</h1>
+    <hr>
+    
+    <h2>Recipe Preamble</h2>
+    <p>Hello, and thank you for visiting my simple website. This site is dedicated to all things 1990s, and I've kept the design true to that era - plain, fast, and to the point.</p>
+    
+    <h2>Ingredients</h2>
+    <p>I'm just a person who loves the internet of the 90s. Back then, everything was simple - no pop-ups, no fancy graphics, just plain text and information.</p>
+    <p>Ingredients list will go here...</p>
+    
+    <h2>Placeholder for Ingredient Image</h2>
+    <img src="img/ingredients.jpg" alt="Ingredients Image">
+    
+    <h2>Method</h2>
+    <p>Step-by-step instructions will go here...</p>
+    
+    <h2>Placeholder for Method Image</h2>
+    <href="/img/method.jpg"><link rel="stylesheet" href=""></href>
+    <img src="img/method2.jpg" alt="Method Image">
+    
+    <h2>Favorite Links</h2>
+    <ul>
+        <li><a href="http://www.yahoo.com" target="_blank" onmouseover="showImage(event, 'img/yahoo.jpg')" onmouseout="hideImage()">Yahoo!</a></li>
+        <li><a href="http://www.geocities.com" target="_blank" onmouseover="showImage(event, 'img/geocities.jpg')" onmouseout="hideImage()">GeoCities</a></li>
+        <li><a href="http://www.altavista.com" target="_blank" onmouseover="showImage(event, 'img/altavista.jpg')" onmouseout="hideImage()">AltaVista</a></li>
+    </ul>
+    
+    <h2>Contact Me</h2>
+    <p>You can email me at <a href="mailto:my90semail@example.com">my90semail@example.com</a>. I might take a while to respond, since I'm probably busy using my 56k modem!</p>
+
+    <hr>
+    <p><em>Last updated: October 1999</em></p>
+
+    <img id="hoverImage" class="hover-image" src="" alt="Hover Image">
+</body>
+</html>

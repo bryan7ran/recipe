@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #F5F5DC;
+            color: #000000;
+            word-wrap: break-word;
+        }
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        hr {
+            border: 1px solid #000000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .hover-image {
+            position: absolute;
+            display: none;
+            border: 1px solid #000000;
+            background-color: #FFFFFF;
+        }
+    </style>
+    <script>
+        function showImage(event, imgSrc) {
+            const hoverImage = document.getElementById('hoverImage');
+            hoverImage.src = imgSrc;
+            hoverImage.style.top = event.pageY + 10 + 'px';
+            hoverImage.style.left = event.pageX + 10 + 'px';
+            hoverImage.style.display = 'block';
+        }
+        
+        function hideImage() {
+            const hoverImage = document.getElementById('hoverImage');
+            hoverImage.style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>1.0 Preamble</h1>
+    <hr>
+    
+    <h2>the development of a recipe for pho is a complex undertaking indescribable by mere amateur kitchen cooks, but rather an endeavor requiring deep contemplation, patience, and an intimate understanding of self-reflection, concentration, and a willpower to write the actual recipe.</h2>
+
+    <h2>to execute the recipe itself is simple, but to pen for perfection is more intricate</h2>
+
+    <h2>whence the passage of time was a necessary component of the process—an evolution—where the various subtleties of pho recipe-writing-time could be given the space to reveal themselves</h2>
+
+    <h2>every ingredient, every nuance of flavour, had to be properly understood, for it is not a mere list of inferior chemical pawns but a spiced symphony of aroma that defies rushed creation</h2>
+
+    <h2>the elapsed years doth represent not a procrastination, but they do</h2>
+
+    <h2>lo, a testament to the mindful exploration required to render justice unto this iconic dish, ensuring that each aspect was authentically wrought. verily, it is only now, after due deliberation, reflection, and an oft embarrassed and tumultuous journey to seattle, that this recipe could finally be put forth—a culmination of ten years of quietly simmering dedication.</h2>
+
+    <h2>behold, the fruits of patience and perseverance have come to pass, as each ingredient is sanctified and each step ordained with divine precision. through steadfast devotion and unwavering faith, this culinary masterpiece is bestowed upon thee, a beacon of culinary sanctity and a legacy of enduring excellence.</h2>
+
+    <h2>there, lo, it is done</h2>
+
+    <a href="2-preamble.html">continue to recipe</a>
+    <h2></h2>
+
+    <h2></h2>
+
+    
+</body>
+</html>
